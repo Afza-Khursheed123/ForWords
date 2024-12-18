@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="abc.jpg" />
+    <None Remove="kite runner.jpg" />
+    <None Remove="mb.png" />
+    <None Remove="web-banner-var-03-1600x380.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="abc.jpg" />
+    <Resource Include="kite runner.jpg" />
+    <Resource Include="mb.png" />
+    <Resource Include="web-banner-var-03-1600x380.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Page4.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+</Project>
